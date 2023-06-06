@@ -1,0 +1,134 @@
+{
+    "shoulder": {
+      "front": {
+        "杠铃": [
+          {
+            "name": "杠铃片旋转",
+            "iconImage": "iconImage",
+          "image": "image",
+          "description": [
+            "俗称开车",
+            "bla bla bla"
+          ],
+          "muscles":[
+            "上胸",
+            "前束",
+            "中束"
+          ]
+        },
+        {
+          "name": "杠铃直立划船",
+          "iconImage": "iconImage",
+        "image": "image",
+        "description": [
+          "俗称开车",
+          "bla bla bla"
+        ],
+        "muscles":[
+          "上胸",
+          "前束",
+          "中束"
+        ]
+      }
+        ],
+        "哑铃": [
+          {
+            "name": "哑铃片旋转",
+            "iconImage": "iconImage",
+          "image": "image",
+          "description": [
+            "俗称开车",
+            "bla bla bla"
+          ],
+          "muscles":[
+            "上胸",
+            "前束",
+            "中束"
+          ]
+        },
+        {
+          "name": "哑铃直立划船",
+          "iconImage": "iconImage",
+        "image": "image",
+        "description": [
+          "俗称开车",
+          "bla bla bla"
+        ],
+        "muscles":[
+          "上胸",
+          "前束",
+          "中束"
+        ]
+      }
+        ]
+      },
+      "middle": {},
+      "back": {}
+    },
+    "chest": {
+      "front": {
+        "杠铃": [
+          {
+            "name": "杠铃片旋转",
+            "iconImage": "iconImage",
+          "image": "image",
+          "description": [
+            "俗称开车",
+            "bla bla bla"
+          ],
+          "muscles":[
+            "上胸",
+            "前束",
+            "中束"
+          ]
+        },
+        {
+          "name": "杠铃直立划船",
+          "iconImage": "iconImage",
+        "image": "image",
+        "description": [
+          "俗称开车",
+          "bla bla bla"
+        ],
+        "muscles":[
+          "上胸",
+          "前束",
+          "中束"
+        ]
+      }
+        ],
+        "哑铃": [
+          {
+            "name": "哑铃片旋转",
+            "iconImage": "iconImage",
+          "image": "image",
+          "description": [
+            "俗称开车",
+            "bla bla bla"
+          ],
+          "muscles":[
+            "上胸",
+            "前束",
+            "中束"
+          ]
+        },
+        {
+          "name": "哑铃直立划船",
+          "iconImage": "iconImage",
+        "image": "image",
+        "description": [
+          "俗称开车",
+          "bla bla bla"
+        ],
+        "muscles":[
+          "上胸",
+          "前束",
+          "中束"
+        ]
+      }
+        ]
+      }
+    }
+   }
+   
+   
