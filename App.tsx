@@ -19,7 +19,7 @@ import {
   TouchableOpacity,
   Button,
   Alert,
-  FlatList
+  FlatList,
 } from 'react-native';
 
 import {
@@ -30,65 +30,93 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import actionItems from './actions.json'
-import _ from 'lodash'
+import actionItems from './actions.json';
+import _ from 'lodash';
+import {Int32} from 'react-native/Libraries/Types/CodegenTypes';
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
-
-const screenDimensions = Dimensions.get('screen')
+const screenDimensions = Dimensions.get('screen');
 
 type CardProps = {
-  title: string,
-  description: string
-}
+  title: string;
+  description: string;
+};
 
 const data = [
-  { id: 1,
-    title: '模版一',
-    description: '杠铃卧推'},
-  { id: 2,
-    title: '模版二',
-    description: '杠铃卧推，杠铃卧推，杠铃卧推'},
-  { id: 3,
-    title: '模版三',
-    description: '杠铃卧推，杠铃卧推，杠铃卧推'},
-]
+  {id: 1, title: '模版一', description: '杠'},
+  {id: 2, title: '模版二', description: '杠铃卧推，杠铃卧推'},
+  {id: 3, title: '模版三', description: '杠铃卧推，杠铃卧推，杠铃卧推'},
+];
 
 const TrainingCard = ({title, description}: CardProps) => (
-    <TouchableOpacity>
-      <View style={styles.trainingCard}>
-        <Text style={styles.cardTitle}>{title}</Text>
-        <Text style={styles.cardText}>{description}</Text>
+  <TouchableOpacity>
+    <View style={styles.trainingCard}>
+      <Text style={styles.cardTitle}>{title}</Text>
+      <Text style={styles.cardText}>EDIT</Text>
+      <Text style={styles.cardText}>{description}</Text>
+    </View>
+  </TouchableOpacity>
+);
+
+function ExerciseList({exercises}: any): JSX.Element {
+  return exercises.map((ex, index) => {
+    return (
+      <View style={styles.cardText}>
+        <Text>
+          {`        `}Name: {ex.name}
+        </Text>
+        <Text>
+          {`        `}IconImage: {ex.iconImage}
+        </Text>
+        <Text>
+          {`        `}Image: {ex.image}
+        </Text>
       </View>
-      </TouchableOpacity>
-)
+    );
+  });
+}
+
+function EquipmentList({value}: any): JSX.Element {
+  return _.map(value, (val: any[], key: string) => {
+    return (
+      <View style={styles.cardText}>
+        <Text>
+          {`    `}
+          {key}
+        </Text>
+        <ExerciseList exercises={val} />
+      </View>
+    );
+  });
+}
 
 function SubBodyPartList({value}: any): JSX.Element {
   return _.map(value, (val: any[], key: string) => {
     // console.log({key})
-    return <View key={key} style={styles.cardText}>
-      <Text>{`  `}{key}</Text>
-    </View>
-  })
+    return (
+      <View key={key} style={styles.cardText}>
+        <Text>
+          {`  `}
+          {key}
+        </Text>
+        <EquipmentList value={val} />
+      </View>
+    );
+  });
 }
 
 function BodyPartList(): JSX.Element {
   return _.map(actionItems, (val: any[], key: any) => {
     // console.log({k: key})
-    return <View style={styles.cardText}>
-      <Text>{key}</Text>
-      <SubBodyPartList value={val}/>
-    </View>
-  }
-  )
+    return (
+      <View style={styles.cardText}>
+        <Text>{key}</Text>
+        <SubBodyPartList value={val} />
+      </View>
+    );
+  });
 }
 
-
-
-
-console.log('A')
+console.log('A');
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -105,7 +133,7 @@ function App(): JSX.Element {
     //     backgroundColor={backgroundStyle.backgroundColor}
     //   />
     //   <Header />
-    //   <FlatList 
+    //   <FlatList
     //     data={data}
     //     renderItem={({item}) => <TrainingCard title={item.title} description={item.description}/>}
     //     numColumns={2}
@@ -117,27 +145,23 @@ function App(): JSX.Element {
     <ScrollView>
       <Header />
       <View style={styles.container}>
-        {data.map((item) => {
+        {data.map(item => {
           return (
-            <TrainingCard key={item.id} title={item.title} description={item.description}></TrainingCard>
-          )
+            <TrainingCard
+              key={item.id}
+              title={item.title}
+              description={item.description}></TrainingCard>
+          );
         })}
-      </View >
-      {/* ITERATION THROUGH LIST */}
-      
-      
+      </View>
       <BodyPartList />
-      
     </ScrollView>
-
-    
-    
   );
 }
 
-const cardWidth = screenDimensions.width / 2 - 20
+const cardWidth = screenDimensions.width / 2 - 20;
 
-console.log('C')
+console.log('C');
 
 const styles = StyleSheet.create({
   container: {
@@ -146,7 +170,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     justifyContent: 'space-evenly',
     alignItems: 'flex-start',
-    alignContent: 'flex-start'
+    alignContent: 'flex-start',
     // flex: 1
   },
   trainingCard: {
@@ -155,16 +179,20 @@ const styles = StyleSheet.create({
     height: 100,
     borderRadius: 10,
     backgroundColor: '#fbfbfb',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
   },
   cardTitle: {
     fontSize: 14,
     margin: 10,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    flexBasis: '50%',
   },
   cardText: {
     fontSize: 12,
     margin: 10,
-  }
+  },
 });
 
 export default App;
