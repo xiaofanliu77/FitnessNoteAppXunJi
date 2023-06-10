@@ -1,0 +1,201 @@
+[
+  {"bodyPart": "Shoulder",
+"subBodyPartList": [
+  {"subBodyPart": "front",
+  "equipmentList":[
+    {""}
+  ]}
+]},
+  {"bodyPart": "Chest"},
+  {"bodyPart": "Back"},
+  {"bodyPart": "Legs"}
+]
+
+
+
+
+
+  {"bodyPart": "shoulder",
+  
+   {
+    "front": {
+      "杠铃": [
+        {
+          "name": "杠铃片旋转",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        },
+        {
+          "name": "杠铃直立划船",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        }
+      ],
+      "哑铃": [
+        {
+          "name": "哑铃片旋转",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        },
+        {
+          "name": "哑铃直立划船",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        }
+      ]
+    },
+    "middle": {
+      "杠铃": [
+        {
+          "name": "杠铃直立划船",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        }
+      ],
+      "哑铃": [
+        {
+          "name": "斯科特推举",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        },
+        {
+          "name": "侧平举",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        }
+      ]
+    },
+    "back": {
+      "杠铃": [
+        {
+          "name": "杠铃俯身提拉",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        }
+      ],
+      "哑铃": [
+        {
+          "name": "俯身飞鸟",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        },
+        {
+          "name": "平板哑铃提拉",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        }
+      ]
+    }
+  }
+},
+  "chest": {
+    "upper": {
+      "杠铃": [
+        {
+          "name": "杠铃片夹胸",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        },
+        {
+          "name": "上斜杠铃卧推",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        }
+      ],
+      "哑铃": [
+        {
+          "name": "上斜哑铃飞鸟",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        },
+        {
+          "name": "反手哑铃卧推",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        }
+      ]
+    },
+    "lower": {
+      "杠铃": [
+        {
+          "name": "暂停卧推",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        },
+        {
+          "name": "杠铃片夹胸",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        }
+      ],
+      "哑铃": [
+        {
+          "name": "哑铃卧推",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        },
+        {
+          "name": "哑铃飞鸟",
+          "iconImage": "iconImage",
+          "image": "image",
+          "description": ["俗称开车", "bla bla bla"],
+          "muscles": ["上胸", "前束", "中束"]
+        }
+      ]
+    }
+  },
+  "back": {
+    "upper": {
+      "杠铃": [],
+      "哑铃": []
+    },
+    "lower": {
+      "杠铃": [],
+      "哑铃": []
+    }
+  },
+  "legs": {
+    "quadriceps": {
+      "杠铃": [],
+      "哑铃": []
+    },
+    "hamstring": {
+      "杠铃": [],
+      "哑铃": []
+    }
+  }
+]
